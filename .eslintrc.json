@@ -11,6 +11,11 @@
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
+  "settings": {
+    "react": {
+      "version": "detect" // Automatically picks the React version you have installed
+    }
+  },
   "rules": {
     "indent": ["error", 2],
     "quotes": ["error", "single"],
