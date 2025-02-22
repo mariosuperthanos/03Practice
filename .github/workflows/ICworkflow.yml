@@ -4,12 +4,14 @@ jobs:
   environment:
     runs-on: ubuntu-latest
     steps:
-      - name: install nodejs
+      - name: Install nodejs
         uses: actions/setup-node@v4
         with: 
           node-version: 18
       - name: copy other files
         uses: actions/checkout@v3
+      - name: Install dependecies
+        uses: npm ci
       - name: Lint script 
         run: npm run lint
       - name: Test script 
