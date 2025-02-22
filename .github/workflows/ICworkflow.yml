@@ -11,7 +11,7 @@ jobs:
       - name: copy other files
         uses: actions/checkout@v3
       - name: Install dependecies
-        uses: npm ci
+        run: npm ci
       - name: Lint script 
         run: npm run lint
       - name: Test script 
